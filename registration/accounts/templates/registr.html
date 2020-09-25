@@ -1,0 +1,15 @@
+
+<form class="account-register form-narrow" id="signup_form" method="POST" action="" >
+    <h3>Register for an account</h3>
+    {% csrf_token %}
+    <h2>{{option1}}</h2>
+    <select name="option" id="options">
+        {% for option in options %}
+            <option value={{option}}>{{option}}</option>
+        {% endfor %}
+    </select>
+    </br>
+
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>

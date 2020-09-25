@@ -1,0 +1,12 @@
+
+<form class="account-register form-narrow" id="login_form" method="POST"
+      action="" >
+  <h3>Login</h3>
+
+  {{ form.as_p }}
+  {% csrf_token %}
+
+  <button type="submit" name="login">
+    Login
+  </button>
+</form>
